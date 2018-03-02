@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.codegene.femicodes.lambert.AddVehicleActivity"
+        tools:showIn="@layout/activity_add_vehicle">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Personal Information"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/bearerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fullname"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/identificationType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="identification type"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/identificationNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="identification number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/bearerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Home Address"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/bearerState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="state"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/bearerLga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="lga"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bearerPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/bearerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Vehicle Information"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/vehicleCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="vehicle category" />
+
+        <EditText
+            android:id="@+id/vehicleSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="vehicle subcategory" />
+
+        <EditText
+            android:id="@+id/policyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="policy number" />
+
+        <EditText
+            android:id="@+id/vehicleModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="vehicle model" />
+
+        <EditText
+            android:id="@+id/vehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="vehicle type" />
+
+        <EditText
+            android:id="@+id/vehicleColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="vehicle color" />
+
+        <EditText
+            android:id="@+id/chasisNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="chasis number" />
+
+        <EditText
+            android:id="@+id/engineNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="engine number" />
+
+        <EditText
+            android:id="@+id/engineCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="engine Capicity" />
+
+        <EditText
+            android:id="@+id/fuelType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="fuel type" />
+
+        <EditText
+            android:id="@+id/tankCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="4"
+            android:hint="tank capacity" />
+
+        <EditText
+            android:id="@+id/manufactureYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="manufacture year" />
+
+        <EditText
+            android:id="@+id/mileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mileage" />
+
+        <EditText
+            android:id="@+id/plateAllocationState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="plate allocation state" />
+
+        <EditText
+            android:id="@+id/licenseNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="license number" />
+
+
+    </LinearLayout>
+</ScrollView>

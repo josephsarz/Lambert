@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.codegene.femicodes.lambert.ResultActivity"
+    tools:showIn="@layout/activity_result">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.codegene.femicodes.lambert.AddVehicleActivity"
+            tools:showIn="@layout/activity_add_vehicle">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Vehicle Information"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Vehicle Category" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/vehicleCategoryTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="vehicle category" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Vehicle Sub Category" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/vehicleSubCategoryTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="vehicle subcategory" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Policy Number" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/policyNumberTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="policy number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Vehicle Model" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/vehicleModelTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="vehicle model" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Vehicle Type" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/vehicleTypeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="vehicle type" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Vehicle Color" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/vehicleColorTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="vehicle color" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Chasis Number" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/chasisNumberTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="chasis number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Engine Number" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/engineNumberTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="engine number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Engine Capacity" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/engineCapacityTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="engine capacity" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Fuel Type" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/fuelTypeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="fuel type" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Tank Capacity" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tankCapacityTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:hint="tank capacity"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Manufacture Year" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/manufactureYearTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="manufacture year" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Mileage" />
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/mileageTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="mileage" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Plate Allocation State" />
+
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/plateAllocationStateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="plate allocation state" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="License Number" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/licenseNumberTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="license number" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="16dp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Personal Information"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Full Name" />
+
+                <TextView
+                    android:id="@+id/bearerNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Fullname" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Identification Type" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/identificationTypeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="identification type" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Identification Number" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/identificationNumberTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="identification number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Home Address" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/bearerAddressTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Home Address" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="State" />
+
+                <TextView
+                    android:id="@+id/bearerStateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="state" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="LGA" />
+
+                <TextView
+                    android:id="@+id/bearerLgaTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="lga" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Phone Number" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/bearerPhoneNumberTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="phone number"
+                    android:inputType="phone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:text="Email Address" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/bearerEmailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

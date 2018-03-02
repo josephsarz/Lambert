@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.codegene.femicodes.lambert.LandingActivity"
+    tools:showIn="@layout/activity_landing">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:scaleType="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top|center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="Vehicle Registration System"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="#000"/>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:background="@android:color/transparent"
+        android:layout_weight="1"
+        android:id="@+id/admin"
+        android:textColor="#fff"
+        android:text="Admin"
+        android:onClick="openAdminLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            />
+
+    <Button
+        android:background="@android:color/transparent"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:id="@+id/customer"
+        android:text="Customer"
+        android:onClick="openLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    </FrameLayout>
+
+
+</FrameLayout>
